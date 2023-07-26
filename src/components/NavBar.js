@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Link,
   AppBar,
@@ -6,8 +6,19 @@ import {
   IconButton,
   SwipeableDrawer,
   Divider,
+  Grid,
 } from "@mui/material";
-import { Menu, ChevronLeft } from "@mui/icons-material";
+import {
+  Menu,
+  ChevronLeft,
+  ContactPage,
+  People,
+  ConnectWithoutContact,
+  Handshake,
+  Facebook,
+  LinkedIn,
+  Twitter,
+} from "@mui/icons-material";
 import styled from "@emotion/styled";
 import WhiteLogo from "../images/AlderwoodConsultingLogoWhite.png";
 
@@ -20,10 +31,18 @@ const NavLinksRight = [
   { name: "Contact Us", href: "/ContactUs" },
 ];
 const MobileLinks = [
-  { name: "Who We Are", href: "/WhoWeAre" },
-  { name: "Consulting Services", href: "/ConsultingServices" },
-  { name: "Speaking Engagements", href: "/SpeakingEngagements" },
-  { name: "Contact Us", href: "/ContactUs" },
+  { name: "Who We Are", href: "/WhoWeAre", icon: <People /> },
+  {
+    name: "Consulting Services",
+    href: "/ConsultingServices",
+    icon: <Handshake />,
+  },
+  {
+    name: "Speaking Engagements",
+    href: "/SpeakingEngagements",
+    icon: <ConnectWithoutContact />,
+  },
+  { name: "Contact Us", href: "/ContactUs", icon: <ContactPage /> },
 ];
 
 const StyledLink = styled(Link)`
@@ -44,8 +63,11 @@ const StyledLogo = styled.img`
 `;
 
 export default function NavBar() {
+  const [open, setOpen] = useState(false);
+
   return (
     <AppBar
+      position="fixed"
       style={{
         "background-image": "linear-gradient(to right, #3E5294, #7ACCC6)",
       }}
@@ -67,8 +89,10 @@ export default function NavBar() {
             {item.name}
           </StyledLink>
         ))}
-        <IconButton sx={{ display: { xs: "block", md: "none" } }}>
-          <Menu />
+        <IconButton
+          sx={{ display: { xs: "block", md: "none" }, marginLeft: 2 }}
+        >
+          <Menu sx={{ fill: "white" }} onClick={() => setOpen(true)} />
         </IconButton>
 
         <Link href="/" justifyItems={"center"}>
@@ -93,20 +117,45 @@ export default function NavBar() {
             color: "red",
           },
         }}
-        open={true}
+        open={open}
+        onOpen={() => setOpen(true)}
+        onClose={() => setOpen(false)}
       >
-        <IconButton>
-          <ChevronLeft />
-        </IconButton>
+        <div style={{ marginLeft: "auto", marginRight: 0 }}>
+          <IconButton>
+            <ChevronLeft
+              sx={{ fill: "white" }}
+              onClick={() => setOpen(false)}
+            />
+          </IconButton>
+        </div>
         <Divider />
         <Link href="/" justifyItems={"center"}>
           <StyledLogo src={WhiteLogo} alt="White Logo" />
         </Link>
         {MobileLinks.map((item) => (
           <StyledMobileLink variant="body2" underline="none" href={item.href}>
-            {item.name}
+            <Grid container spacing={2}>
+              <Grid item>{item.icon}</Grid>
+              <Grid item>{item.name}</Grid>
+            </Grid>
           </StyledMobileLink>
         ))}
+        <Grid
+          container
+          spacing={2}
+          sx={{ justifyContent: "center", marginTop: "auto", marginBottom: 0 }}
+        >
+          <Grid item>
+            <Facebook sx={{ fill: "white", fontSize: 40 }} />
+          </Grid>
+          <Grid item>
+            <LinkedIn sx={{ fill: "white", fontSize: 40 }} />
+          </Grid>
+          <Grid item>
+            <Twitter sx={{ fill: "white", fontSize: 40 }} />
+          </Grid>
+        </Grid>
       </SwipeableDrawer>
     </AppBar>
   );
