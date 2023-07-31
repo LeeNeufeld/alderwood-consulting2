@@ -1,23 +1,35 @@
 import React from "react";
-import { AppBar, Toolbar } from "@mui/material";
+import {
+  AppBar,
+  Grid,
+  Link,
+  Toolbar,
+  Paper,
+  Typography,
+  Box,
+  Container,
+} from "@mui/material";
+import { Phone } from "@mui/icons-material";
 
 export default function Footer() {
   return (
-    <AppBar
-      position="fixed"
+    <Box
       sx={{
-        "background-image": "linear-gradient(to right, #3E5294, #7ACCC6)",
-        top: "auto",
-        bottom: 0,
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh",
       }}
     >
-      <Toolbar
-        disableGutters
+      <Grid
         sx={{
-          alignContent: "center",
-          justifyContent: { xs: "space-between", md: "space-around" },
+          "background-image": "linear-gradient(to right, #3E5294, #7ACCC6)",
+          marginTop: "auto",
+          marginRight: 0,
+          marginLeft: 0,
         }}
-      ></Toolbar>
-    </AppBar>
+      >
+        <Phone />
+      </Grid>
+    </Box>
   );
 }
