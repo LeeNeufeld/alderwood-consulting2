@@ -7,6 +7,7 @@ import {
   SwipeableDrawer,
   Divider,
   Grid,
+  CssBaseline,
 } from "@mui/material";
 import {
   Menu,
@@ -67,11 +68,13 @@ export default function NavBar() {
 
   return (
     <AppBar
-      position="fixed"
+      disableGutters
+      position="sticky"
       style={{
         "background-image": "linear-gradient(to right, #3E5294, #7ACCC6)",
       }}
     >
+      <CssBaseline />
       <Toolbar
         disableGutters
         sx={{

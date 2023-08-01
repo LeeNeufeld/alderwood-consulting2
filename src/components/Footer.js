@@ -8,6 +8,7 @@ import {
   Typography,
   Box,
   Container,
+  CssBaseline,
 } from "@mui/material";
 import { Phone } from "@mui/icons-material";
 
@@ -20,6 +21,7 @@ export default function Footer() {
         minHeight: "100vh",
       }}
     >
+      <CssBaseline />
       <Grid
         sx={{
           "background-image": "linear-gradient(to right, #3E5294, #7ACCC6)",
