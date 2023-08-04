@@ -1,9 +1,19 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { Box, Card, Grid, Paper, Typography } from "@mui/material";
+import {
+  Box,
+  Card,
+  CardMedia,
+  Divider,
+  Grid,
+  IconButton,
+  Paper,
+  Typography,
+} from "@mui/material";
 import styled from "@emotion/styled";
 import BlackLogo from "../images/AlderwoodConsultingLogoBlack.png";
 import Banff from "../images/Banff.jpg";
+import { ConnectWithoutContact } from "@mui/icons-material";
 
 const StyledLogo = styled.img`
   padding: 25px;
@@ -33,7 +43,11 @@ export default function Index() {
             />
           </Grid>
           <Grid item>
-            <Typography sx={{ padding: 5 }} textAlign="center">
+            <Typography
+              sx={{ padding: 5, maxWidth: "1500px" }}
+              textAlign="center"
+              alignSelf="center"
+            >
               Insurance is a lot like oxygen – everyone needs it, very few
               people understand how it works, and the lack of it can take your
               life away. The financial safety net that hovers under nearly every
@@ -47,13 +61,14 @@ export default function Index() {
               to keep from falling in the first place?
             </Typography>
           </Grid>
-          <Grid item>
+          <Grid item sx={{ marginBottom: 5 }}>
             <Card
               sx={{
                 padding: 5,
                 mx: 5,
                 border: "2px solid black",
                 backgroundColor: "#D9D9D9",
+                maxWidth: "1500px",
               }}
               variant="outlined"
             >
@@ -69,6 +84,54 @@ export default function Index() {
                 customer through educational presentations.
               </Typography>
             </Card>
+          </Grid>
+          <Grid item>
+            <Card
+              sx={{
+                maxWidth: "1500px",
+
+                marginLeft: 5,
+                marginRight: 5,
+              }}
+            >
+              <CardMedia component="img" image={Banff} alt="Banff Pic" />
+            </Card>
+          </Grid>
+
+          <Grid item>
+            <Typography
+              sx={{ padding: 5, maxWidth: "1500px" }}
+              textAlign="center"
+              alignSelf="center"
+            >
+              After many years and lots of experience in insurance and risk
+              management (and a lot of phone calls and questions at dinner
+              parties), Rod and Danielle Ahlskog had come to understand
+              something very important – that almost nobody understood insurance
+              and risk management, and how to make it work for them. Even most
+              insurance professionals tend to stay in one lane throughout their
+              career; selling insurance, adjusting claims, working for the
+              insurance companies themselves, or doing risk management. Very few
+              people had done it all, and so those who understood how all the
+              parts fit together in this complex machine were rare finds.
+            </Typography>
+          </Grid>
+          <Grid item>
+            <Typography
+              sx={{ padding: 3, maxWidth: "1500px" }}
+              textAlign="center"
+              alignSelf="center"
+            >
+              Big corporations have dedicated risk managers and insurance
+              consultants on staff to handle this very issue – but what about
+              the average business owner, or consultant, or family? Alderwood
+              Consulting was founded to answer that question, bringing
+              specialized education and decades of experience out of the
+              boardroom and into the hands of everyday people as they work to
+              build a better future for their businesses and families. Because
+              knowledge and support power success, and should be within reach
+              for anyone willing to seek them out.
+            </Typography>
           </Grid>
         </Grid>
       </Box>

@@ -9,29 +9,40 @@ import {
   Box,
   Container,
   CssBaseline,
+  Stack,
 } from "@mui/material";
-import { Phone } from "@mui/icons-material";
+import { Business, Email, Fax, Phone } from "@mui/icons-material";
 
 export default function Footer() {
   return (
-    <Box
+    <AppBar
       sx={{
-        display: "flex",
-        flexDirection: "column",
-        minHeight: "100vh",
+        top: "auto",
+        bottom: 0,
       }}
+      position="sticky"
     >
       <CssBaseline />
-      <Grid
+      <Toolbar
+        container
         sx={{
           "background-image": "linear-gradient(to right, #3E5294, #7ACCC6)",
-          marginTop: "auto",
-          marginRight: 0,
-          marginLeft: 0,
         }}
       >
-        <Phone />
-      </Grid>
-    </Box>
+        <Grid container>
+          <Grid xs={2} item>
+            <Phone />
+            <Typography>780-975-3896</Typography>
+          </Grid>
+          <Grid item></Grid>
+          <Grid item>
+            <Phone />
+          </Grid>
+          <Grid item>
+            <Typography>780-975-3896</Typography>
+          </Grid>
+        </Grid>
+      </Toolbar>
+    </AppBar>
   );
 }
