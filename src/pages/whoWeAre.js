@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { Grid, Typography, Paper, Divider, Button } from "@mui/material";
+import { Grid, Typography, Paper, Button } from "@mui/material";
 import styled from "@emotion/styled";
 import CoupleStock from "../images/CoupleSunStock.jpg";
 import ManStock from "../images/ManStock.jpg";
@@ -81,7 +81,7 @@ export default function WhoWeAre() {
                 textAlign="center"
                 pr={{ xs: 0, md: 5 }}
               >
-                <Typography>
+                <Typography variant="subtitle2" fontWeight="800">
                   Danielle Ahlskog grew up in Hinton, Alberta, juggling a pile
                   of extracurriculars with part-time jobs that ran the gamut
                   from waitressing to bookkeeping. After attending Grant
@@ -110,7 +110,7 @@ export default function WhoWeAre() {
                 />
               </Grid>
               <Grid item xs={12} md={6} mt={5} pr={{ xs: 0, md: 5 }}>
-                <Typography>
+                <Typography variant="subtitle2" fontWeight="800">
                   Rod Ahlskog was raised on a farm north of Wildwood, Alberta,
                   and spent his early life doing everything from delivering
                   furniture to grading roads and driving transport trucks. After
