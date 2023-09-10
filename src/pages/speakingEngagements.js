@@ -40,6 +40,7 @@ export default function SpeakingEngagements() {
             }}
           />
         </Grid>
+
         <Grid item>
           <Typography
             sx={{ padding: 5, maxWidth: "1000px", color: "#1E1E1E" }}
@@ -47,18 +48,19 @@ export default function SpeakingEngagements() {
             variant="subtitle2"
             fontWeight="800"
           >
-            Lorem ipsum dolor sit amet. Et molestias laudantium et perspiciatis
-            omnis vel omnis totam ut error molestiae hic autem blanditiis ut
-            incidunt quod eum aliquam provident! Ad dolor asperiores ut quam
-            rerum aut sint molestiae qui dolorem alias ab laboriosam iste. Ex
-            asperiores consequatur et reiciendis dicta qui nobis velit? Vel nisi
-            delectus et omnis doloremque et cupiditate excepturi qui nihil
-            molestiae et repellat galisum aut nobis odio a ipsam molestiae? Et
-            laborum illum ad ullam doloribus id internos dolores quo maiores
-            tempore non eaque iste et placeat molestiae et commodi ducimus. Et
-            ratione internos ad architecto porro qui atque ipsum ut dolor
-            commodi. Et numquam eveniet est voluptas recusandae et galisum animi
-            non vitae quasi sed dolore accusamus aut delectus necessitatibus.
+            Let us come shine a light on the ins and outs of insurance and risk
+            management! Whether you are a group of business owners, a private or
+            government municipal organization, or a collection of private
+            citizens looking to get the best value for your insurance dollar, we
+            have a presentation for you. Choose from one of the categories
+            below, and Rod and Danielle will tailor an engaging experience to
+            match your interests and time allotment. Learn what to do and not do
+            to protect your interests, ask all of your most burning questions,
+            unravel the mysterious pile of words that is your insurance policy,
+            and put all that new savvy to work for you. We promise a meeting
+            full of useful tips, entertaining stories, and eye-opening advice
+            for anyone looking to protect that most precious of assets – their
+            financial future.
           </Typography>
         </Grid>
         <Grid item maxWidth="1000px" mb={2}>
