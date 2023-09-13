@@ -246,7 +246,7 @@ export default function SpeakingEngagements() {
         <Grid item xs={12} textAlign="center" mb={5} sx={{ mr: 3, ml: 3 }}>
           <Button
             variant="contained"
-            href="/ContactUs"
+            href={`mailto:admin@alderwoodconsulting.ca`}
             sx={{ backgroundColor: "#3E5294" }}
           >
             Contact Rod & Danielle to Speak At Your Event

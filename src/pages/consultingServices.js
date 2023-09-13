@@ -526,7 +526,7 @@ export default function ConsultingServices() {
             Additional Services (Quoted on Hourly Basis)
           </Typography>
         </Grid>
-        <Grid item maxWidth="1000px" mb={2}>
+        <Grid item maxWidth="1000px">
           <Accordion>
             <AccordionSummary
               expandIcon={<ExpandMore />}
@@ -550,11 +550,203 @@ export default function ConsultingServices() {
             </AccordionDetails>
           </Accordion>
         </Grid>
+        <Grid item maxWidth="1000px">
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMore />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+              s
+            >
+              <Typography fontWeight="800">
+                Ongoing Risk Management Support
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Things change in business; you may be growing, or have different
+                needs than the last time Alderwood profiled your operations. For
+                past customers looking for updated advice on new property or
+                practices, special rates are available.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        </Grid>
+        <Grid item maxWidth="1000px">
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMore />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+              s
+            >
+              <Typography fontWeight="800">
+                Updated Insurance Policy Review & Recommendations
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                If your insurance rates are suddenly in flux or your claims
+                history has become an issue, we can work with you and your
+                broker on ideas for restructuring your risk profile –
+                potentially saving you money or avoiding the inconvenience and
+                cost of changing insurers.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        </Grid>
+        <Grid item maxWidth="1000px">
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMore />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+              s
+            >
+              <Typography fontWeight="800">
+                Liaising With Insurance Company/Broker For New Policy/Renewal
+                Recommendations
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Taking out a new insurance policy, or renegotiating your current
+                ones, can be stressful or confusing. If you’re feeling a little
+                at sea, or want help discussing your new risk management
+                solutions with your insurance provider, help is at hand.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        </Grid>
+        <Grid item maxWidth="1000px">
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMore />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+              s
+            >
+              <Typography fontWeight="800">
+                Risk Management Consultation & Policy Review For Personal
+                Property Clients
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Protecting yourself and preventing losses isn’t just a smart
+                idea for businesses; we offer the same risk management
+                strategies and services for individuals.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        </Grid>
+        <Grid item mt={2} mb={2} xs={12}>
+          <Typography variant="h5" textAlign="center">
+            Claims Advocacy Services
+          </Typography>
+        </Grid>
+        <Grid item maxWidth="1000px">
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMore />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+              s
+            >
+              <Typography fontWeight="800">Claim Advice & Guidance</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                No matter how carefully you plan, a loss can still happen. And
+                if it does, there are questions to be answered and actions to be
+                taken. Whether it’s the proper way to protect your premises
+                after it suffers damage, the pros and cons of putting in a
+                smaller claim, or a review of whether or not the insurance
+                company is offering you a fair settlement, Alderwood can help.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        </Grid>
+        <Grid item maxWidth="1000px">
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMore />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+              s
+            >
+              <Typography fontWeight="800">
+                Specialist Advice & Recommendations
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                While insurers can have preferences on body shops or building
+                contractors, ultimately the choice of who to hire rests with the
+                owner. Knowing your options, and how to choose a service
+                professional that is right for you and your claim, can make a
+                big difference to the outcome. It’s advice that can really pay
+                off in the long run.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        </Grid>
+        <Grid item maxWidth="1000px">
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMore />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+              s
+            >
+              <Typography fontWeight="800">
+                Liaising With Your Adjuster, Insurance Company, or Legal
+                Representation
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                Sometimes a claim goes sideways – your adjuster or insurance
+                company isn’t responding to your calls in a timely manner (or at
+                all), the settlement or service that you’ve been offered doesn’t
+                seem fair to you, or you’re debating getting a lawyer involved
+                after an injury. Our many years of experience with the claims
+                process can help you find a path through these issues or
+                questions, and offers a bridge of expertise between a stalled
+                claim and successful resolution.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        </Grid>
+        <Grid item maxWidth="1000px" mb={3}>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMore />}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+              s
+            >
+              <Typography fontWeight="800">
+                Umpire Services During Claim Disputes
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                When every avenue has been explored, and you and the insurance
+                company can’t seem to come to terms, arbitration can be the last
+                step in settling a dispute. The claims resolution process can be
+                confusing and stressful, but whether it’s explaining the process
+                and potential outcomes or acting as an umpire between sides, we
+                are able to help.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+        </Grid>
 
         <Grid item xs={12} textAlign="center" mb={5} sx={{ mr: 3, ml: 3 }}>
           <Button
             variant="contained"
-            href="/ContactUs"
+            href={`mailto:admin@alderwoodconsulting.ca`}
             sx={{ backgroundColor: "#3E5294" }}
           >
             Contact Rod & Danielle For A Custom Quote
