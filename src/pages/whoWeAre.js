@@ -6,6 +6,9 @@ import CoupleStock from "../images/CoupleSunStock.jpg";
 import ManStock from "../images/ManStock.jpg";
 import WomanStock from "../images/WomanStock.jpg";
 import WhoWeAreLogo from "../images/WhoWeAreLogo.png";
+import DualHeadshot1 from "../images/DualHeadshot1.jpg";
+import RodHeadshot from "../images/RodHeadshot.jpg";
+import DanielleHeadshot from "../images/DanielleHeadshot.jpg";
 
 export default function WhoWeAre() {
   const StyledLogo = styled.img`
@@ -27,7 +30,7 @@ export default function WhoWeAre() {
         </Grid>
         <Grid item>
           <img
-            src={CoupleStock}
+            src={DualHeadshot1}
             alt="Couple"
             style={{
               maxWidth: "100%",
@@ -68,8 +71,8 @@ export default function WhoWeAre() {
             >
               <Grid item xs={12} md={6} mt={5}>
                 <img
-                  src={WomanStock}
-                  alt="Woman Stock"
+                  src={DanielleHeadshot}
+                  alt="Danielle"
                   style={{ maxWidth: "300px" }}
                 />
               </Grid>
@@ -104,8 +107,8 @@ export default function WhoWeAre() {
 
               <Grid item xs={12} md={6} mt={5}>
                 <img
-                  src={ManStock}
-                  alt="Man Stock"
+                  src={RodHeadshot}
+                  alt="Rod"
                   style={{ maxWidth: "300px" }}
                 />
               </Grid>

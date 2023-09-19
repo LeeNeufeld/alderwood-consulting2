@@ -4,6 +4,7 @@ import { Card, CardMedia, Grid, Link, Typography } from "@mui/material";
 import styled from "@emotion/styled";
 import BlackLogo from "../images/AlderwoodConsultingLogoBlack.png";
 import Banff from "../images/Banff.jpg";
+import DualHeadshot2 from "../images/DualHeadshot2.jpg";
 import { ConnectWithoutContact, Handshake } from "@mui/icons-material";
 
 const StyledLogo = styled.img`
@@ -92,7 +93,11 @@ export default function Index() {
               marginRight: 5,
             }}
           >
-            <CardMedia component="img" image={Banff} alt="Banff Pic" />
+            <CardMedia
+              component="img"
+              image={DualHeadshot2}
+              alt="Danielle and Rod 1"
+            />
           </Card>
         </Grid>
 

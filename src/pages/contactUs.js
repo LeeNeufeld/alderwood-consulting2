@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import ContactUsLogo from "../images/ContactUsLogo.png";
+import Location from "../images/Location.png";
 import {
   Accordion,
   AccordionDetails,
@@ -14,6 +15,7 @@ import {
   ListItem,
   ListItemText,
   IconButton,
+  CardMedia,
 } from "@mui/material";
 import styled from "@emotion/styled";
 import { Fax, Mail, Phone } from "@mui/icons-material";
@@ -41,7 +43,7 @@ export default function ContactUs() {
             <Mail sx={{ fontSize: 100, color: "#3E5294" }} />
           </IconButton>
           <Typography variant="h6" sx={{ color: "#3E5294" }}>
-            780-975-3896
+            admin@alderwoodconsulting.ca
           </Typography>
         </Grid>
         <Grid item xs={12} md={4} sx={{ textAlign: "center" }}>
@@ -51,6 +53,17 @@ export default function ContactUs() {
           <Typography variant="h6" sx={{ color: "#3E5294" }}>
             855-287-5513
           </Typography>
+        </Grid>
+      </Grid>
+      <Grid container>
+        <Grid item xs={12} md={4} sx={{ textAlign: "center" }}>
+          <Card
+            sx={{
+              maxWidth: "1500px",
+            }}
+          >
+            <CardMedia component="img" image={Location} alt="Location" />
+          </Card>
         </Grid>
       </Grid>
     </Layout>
