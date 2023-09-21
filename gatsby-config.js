@@ -6,6 +6,9 @@ module.exports = {
     title: `AlderwoodConsulting`,
     siteUrl: `https://www.alderwoodconsulting.com`,
   },
+  flags: {
+    DEV_SSR: true,
+  },
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
