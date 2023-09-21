@@ -16,9 +16,9 @@ import {
   People,
   ConnectWithoutContact,
   Handshake,
-  Facebook,
-  LinkedIn,
-  Twitter,
+  // Facebook,
+  // LinkedIn,
+  // Twitter,
 } from "@mui/icons-material";
 import styled from "@emotion/styled";
 import WhiteLogo from "../images/AlderwoodConsultingLogoWhite.png";
@@ -144,7 +144,7 @@ export default function NavBar() {
             </Grid>
           </StyledMobileLink>
         ))}
-        <Grid
+        {/* <Grid
           container
           spacing={2}
           sx={{ justifyContent: "center", marginTop: "auto", marginBottom: 0 }}
@@ -158,7 +158,7 @@ export default function NavBar() {
           <Grid item>
             <Twitter sx={{ fill: "white", fontSize: 40 }} />
           </Grid>
-        </Grid>
+        </Grid> */}
       </SwipeableDrawer>
     </AppBar>
   );

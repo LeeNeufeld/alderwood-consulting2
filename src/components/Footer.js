@@ -2,16 +2,12 @@ import React from "react";
 import {
   AppBar,
   Grid,
-  Link,
   Toolbar,
-  Paper,
   Typography,
-  Box,
-  Container,
   CssBaseline,
-  Stack,
+  IconButton,
 } from "@mui/material";
-import { Business, Email, Fax, Phone } from "@mui/icons-material";
+import { FaxOutlined, Mail, Phone } from "@mui/icons-material";
 
 export default function Footer() {
   return (
@@ -29,17 +25,35 @@ export default function Footer() {
           "background-image": "linear-gradient(to right, #3E5294, #7ACCC6)",
         }}
       >
-        <Grid container>
-          <Grid xs={2} item>
-            <Phone />
-            <Typography>780-975-3896</Typography>
+        <Grid
+          container
+          direction="row"
+          alignItems="center"
+          justifyContent="center"
+          spacing={2}
+          p={3}
+        >
+          <Grid item xs={12} md={4} sx={{ textAlign: "center" }}>
+            <IconButton href="tel:+7809753896">
+              <Phone sx={{ marginRight: 2, color: "white" }} />
+
+              <Typography sx={{ color: "white" }}>780-975-3896</Typography>
+            </IconButton>
           </Grid>
-          <Grid item></Grid>
-          <Grid item>
-            <Phone />
+          <Grid item xs={12} md={4} sx={{ textAlign: "center" }}>
+            <IconButton href="mailto:admin@alderwoodconsulting.ca">
+              <Mail sx={{ marginRight: 2, color: "white" }} />
+
+              <Typography sx={{ color: "white" }}>
+                admin@alderwoodconsulting.ca
+              </Typography>
+            </IconButton>
           </Grid>
-          <Grid item>
-            <Typography>780-975-3896</Typography>
+          <Grid item xs={12} md={4} sx={{ textAlign: "center" }}>
+            <IconButton href="fax:+8552875513">
+              <FaxOutlined sx={{ marginRight: 2, color: "white" }} />
+              <Typography sx={{ color: "white" }}>855-287-5513</Typography>
+            </IconButton>
           </Grid>
         </Grid>
       </Toolbar>
