@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `AlderwoodConsulting`,
-    siteUrl: `https://www.alderwoodconsulting.com`,
+    siteUrl: `alderwoodconsulting.ca`,
   },
   flags: {
     DEV_SSR: true,
