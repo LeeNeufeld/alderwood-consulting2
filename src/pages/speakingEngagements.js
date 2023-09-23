@@ -64,7 +64,7 @@ export default function SpeakingEngagements() {
           </Typography>
         </Grid>
         <Grid item maxWidth="1000px" mb={2}>
-          <Accordion sx={{ mr: 3, ml: 3 }}>
+          <Accordion>
             <AccordionSummary
               expandIcon={<ExpandMore />}
               aria-controls="panel1a-content"
@@ -76,7 +76,7 @@ export default function SpeakingEngagements() {
                 Business Insurance
               </Typography>
             </AccordionSummary>
-            <AccordionDetails sx={{ mr: 3, ml: 3 }}>
+            <AccordionDetails>
               <Typography>
                 There is one thing that every business, from the tiniest startup
                 to the world’s largest corporation, needs – the protection that
@@ -108,19 +108,18 @@ export default function SpeakingEngagements() {
           </Accordion>
         </Grid>
         <Grid item maxWidth="1000px" mb={2}>
-          <Accordion sx={{ mr: 3, ml: 3 }}>
+          <Accordion>
             <AccordionSummary
               expandIcon={<ExpandMore />}
               aria-controls="panel1a-content"
               id="panel1a-header"
-              sx={{ mr: 1, ml: 1 }}
             >
               <Typography fontWeight="800">
                 When Someone Has Fallen & Can’t Get Up, & Other Misadventures –
                 Claims
               </Typography>
             </AccordionSummary>
-            <AccordionDetails sx={{ mr: 3, ml: 3 }}>
+            <AccordionDetails>
               <Typography>
                 No matter how carefully you plan, sometimes things go wrong. The
                 same is true for insurance claims; the world is a complicated
@@ -151,18 +150,17 @@ export default function SpeakingEngagements() {
           </Accordion>
         </Grid>
         <Grid item maxWidth="1000px" mb={2}>
-          <Accordion sx={{ mr: 3, ml: 3 }}>
+          <Accordion>
             <AccordionSummary
               expandIcon={<ExpandMore />}
               aria-controls="panel1a-content"
               id="panel1a-header"
-              sx={{ mr: 1, ml: 1 }}
             >
               <Typography fontWeight="800">
                 Where The Rubber Meets The Road – Auto Insurance
               </Typography>
             </AccordionSummary>
-            <AccordionDetails sx={{ mr: 3, ml: 3 }}>
+            <AccordionDetails>
               <Typography>
                 Nearly every adult in Canada owns at least one vehicle, whether
                 it be for work, personal use, or a combination of both. And
@@ -198,19 +196,18 @@ export default function SpeakingEngagements() {
           </Accordion>
         </Grid>
         <Grid item maxWidth="1000px" mb={5}>
-          <Accordion sx={{ mr: 3, ml: 3 }}>
+          <Accordion s>
             <AccordionSummary
               expandIcon={<ExpandMore />}
               aria-controls="panel1a-content"
               id="panel1a-header"
-              sx={{ mr: 1, ml: 1 }}
             >
               <Typography fontWeight="800">
                 How To Protect Your Home Sweet Home & Other Stuff That You Own –
                 Personal Insurance
               </Typography>
             </AccordionSummary>
-            <AccordionDetails sx={{ mr: 3, ml: 3 }}>
+            <AccordionDetails>
               <Typography>
                 At the end of the day, there’s nothing like kicking back on your
                 own couch… or feeling the wind in your hair as you motor down
